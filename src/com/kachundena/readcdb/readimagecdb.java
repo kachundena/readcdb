@@ -28,7 +28,7 @@ import java.io.ByteArrayOutputStream;
 public class readimagecdb {
 
     public static void main(String[] args) {
-        String szValue = readCdbFromFile("qr_code.jpg");
+        String szValue = readCdbFromFile(args[0]);
         if (szValue == "") {
             System.out.println("Error!");
         }
